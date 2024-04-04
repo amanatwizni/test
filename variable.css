@@ -1,0 +1,244 @@
+:root {
+
+  /* THEME COLORS SCHEME */
+
+  /*gray*/
+  --gray-100: 249, 250, 252;
+  --gray-200: 245, 248, 250;
+  --gray-300: 242, 245, 248;
+  --gray-400: 239, 243, 248;
+  --gray-500: 234, 239, 245;
+  --gray-600: 226, 232, 240;
+  --gray-700: 211, 220, 234;
+  --gray-800: 204, 214, 230;
+  --gray-900: 184, 197, 217;
+  --gray-1000: 168, 182, 206;
+  --gray-1100: 148, 163, 188;
+  --gray-1200: 128, 146, 177;
+  --gray-1300: 99, 115, 144;
+  --gray-1400: 66, 82, 110;
+  --gray-1500: 23, 43, 77;
+
+  /*primary*/
+  --primary-lightest          : 231, 240, 255;
+  --primary-lighter           : 190, 215, 255; /*Highlight*/
+  --primary-light             : 160, 196, 255;
+  --primary                   : 18, 92, 211;
+  --primary-dark              : 52, 119, 228; /*btn hover*/
+  --primary-darker            : 19, 92, 211;
+  --primary-darkest           : 14, 77, 180;
+
+  /*primary accent*/
+  --primary-accent-lightest   : 255, 187, 0;
+  --primary-accent-lighter    : 255, 187, 0;
+  --primary-accent-light      : 255, 187, 0;
+  --primary-accent            : 255, 187, 0;
+  --primary-accent-dark       : 255, 187, 0;
+  --primary-accent-darker     : 255, 187, 0;
+  --primary-accent-darkest    : 255, 187, 0;
+
+  /*success*/
+  --success-lightest          : 230, 249, 241;
+  --success-lighter           : 189, 238, 218;
+  --success-light             : 148, 229, 196;
+  --success                   : 0,  152,  90;
+  --success-dark              : 0, 137, 81;
+  --success-darker            : 0, 116, 68;
+  --success-darkest           : 0, 95, 56;
+
+  /*danger*/
+  --danger-lightest           : 255, 239, 239;
+  --danger-lighter            : 255, 220, 220;
+  --danger-light              : 255, 164, 163;
+  --danger                    : 212, 62, 59;
+  --danger-dark               : 198, 39, 35;
+  --danger-darker             : 174, 9, 6;/*errors*/
+  --danger-darkest            : 139, 2, 0;
+
+
+  /*warning*/
+  --warning-lightest          : 255, 243, 233;
+  --warning-lighter           : 255, 227, 193;
+  --warning-light             : 255, 209, 154;
+  --warning                   : 242, 155, 0;
+  --warning-dark              : 237, 142, 0;
+  --warning-darker            : 242, 122, 0;
+  --warning-darkest           : 242, 87, 0;
+
+  /* Custom Colors */
+  --color-blue                : 56, 162, 229;
+  --color-purple              : 158, 97, 211;
+  --color-backdrop            : 10, 36, 99;
+
+
+  /* BOOTSTRAP ELEMENTS OVERIDE */
+
+  /*setup*/
+  --font-family-base          : 'Inter-UI';
+  --html-font-size            : 62.5%;
+  --font-size-base            : 1.4rem; /*fallback 1.4rem*/
+  --font-size-sm              : 1.2rem; /*fallback 1.2rem*/
+  --font-size-xs              : 1rem;   /*fallback 1rem*/
+  --body-bg                   : var(--gray-300);
+  --body-color                : var(--gray-1500);
+  --font-weight-base          : 400; /*fallback 400*/
+  --gutter-space              : 2rem;
+  --gutter-space-xs           : 1rem;
+
+
+  /*card*/
+  --card-border               : none;
+  --card-border-radius        : 0;
+  --card-shadow               : 0 10px 10px -8px rgba( var(--primary) , 0.1);
+  --card-header-bg            : 255, 255, 255;
+  --card-header-height        : 50px;
+  --card-border-color         : var(--gray-600);
+
+  /*from control*/
+  --form-group-margin         : 2.4rem;
+  --form-control-height       : 4rem;
+  --form-control-border-color : var(--gray-600);
+  --form-control-placholder   : var(--gray-800);
+  --form-control-gutter-x     : 1rem;
+  --form-control-gutter-y     : 0.5rem;
+  --form-control-invalid-color: 212, 62, 59;
+
+  /*custom-control*/
+  --custom-control-border     : var(--gray-800);
+  --custom-control-checked-bg : white;
+  --custom-control-checked-color: var(--primary);
+  --custom-control-label-color: var(--gray-1300);
+  --custom-control-checked--label-color: var(--gray-1500);
+
+  /*btn*/
+  --btn-line-height           : 1.5;
+  --btn-pad-x                 : 0.8rem;
+  --btn-pad-y                 : 0.4rem;
+
+
+
+
+
+
+  /* CUSTOM ELEMENTS/CONTROLS */
+
+  /*primary header*/
+  --priamary-header-height    : 5rem;
+  --primary-header-start-bg   : 39, 44, 74;
+  --primary-header-end-bg     : 39, 44, 74;
+  --primary-header-color      : 255, 255, 255;
+  --primary-header-position   : sticky;
+  --primary-header-top-value  : 0;
+  --navbar-brand-right-space : 4.5rem;
+  --navbar-brand-logo-src     : url(assets/arive-new/logo.svg);
+  --navbar-brand-logo-width   : 120px;
+  /*primary header nav link options*/
+  --primary-header-link-gutter: 0px 1.6rem;
+  --primary-header-link-height: var(--priamary-header-height);
+  --primary-header-link-color : 255, 255, 255;
+  --primary-header-link-active-bg: rgba(255, 255, 255, 0.1);
+  --primary-header-link-active-border: inset 0 3px 0 rgba( var(--primary), 1 );
+  --primary-header-link-decoration: 'none';
+  --primary-header-link-weight: 600;
+  --primary-header-link-radius: 0;
+  /*primary header right nav link options*/
+  --primary-header-right-link-color : 255, 255, 255;
+  --primary-header-right-link-color-opacity : 0.6;
+
+
+
+
+
+
+  /*sub header*/
+  --sub-header-height         : 50px;
+  --sub-header-height-lg      : 7.4rem;
+  --sub-header-start-bg       : 255, 255, 255;
+  --sub-header-end-bg         : 255, 255, 255;
+  --sub-header-color          : var(--gray-1500); /*breadcrumb text color*/
+  --sub-header-link-color     : var(--primary); /*breadcrumb link color*/
+  --sub-header-btn-bg         : var(--primary);
+  --sub-header-btn-color      : 255, 255, 255;
+  --sub-header-btn-accent-bg  : '' ;
+  --sub-header-btn-accent-color: '' ;
+  --sub-header-position       : sticky;
+  --sub-header-top-value      : var(--priamary-header-height);
+  --sub-header-shadow         : 0 10px 10px -8px rgba( var(--primary) , 0.1);
+  --sub-header-sticky-invert  : false;
+  --sub-header-sticky-btn-bg  : var(--primary);
+  --sub-header-sticky-btn-color: 255, 255, 255;
+
+
+
+  /* Tooltip */
+  --tooltip-color: rgba(255,255,255,1);
+  --tooltip-font-size: 1.2rem;
+  --tooltip-move: 4px;
+
+  /* base color */
+  --base-color: 255, 255, 255;
+
+  /* Modal */
+  --modal-bg: rgba(var(--base-color), 1);
+  --modal__header--bg-color: var(--gray-100);
+  --modal--border-color: var(--gray-600);
+  --modal--success-darker-color: var(--success-dark);
+  --modal--success-color: var(--success);
+  --modal--warning-darker-color: var(--warning-dark);
+  --modal--warning-color: var(--warning);
+  --modal--danger-darker-color: var(--danger-dark);
+  --modal--danger-color: var(--danger);
+  --modal-backdrop: rgba(var(--color-backdrop), 0.5);
+  /* toast */
+  --toast__text--color: var(--gray-1500);
+  --toast--bg-color: var(--base-color);
+  --toast__close-btn--color: var(--gray-1300);
+  --toast-border--color: rgba(var(--gray-1200), 0.1);
+  --toast--box-shadow: 0px 2px 20px 0px rgba(38, 44, 73, 0.1);
+  --toast-success-icon--bg-color: rgba(var(--success), 0.1);
+  --toast-warning-icon--bg-color: rgba(var(--warning-darker), 0.1);
+  --toast-danger-icon--bg-color: rgba(var(--danger-darker), 0.1);
+  /* alert */
+  --alert__text--color: var(--gray-1400);
+  --alert--bg-danger: rgba(var(--danger-darker), 0.04);
+  --alert-border--danger: rgba(var(--danger), 0.5);
+  --alert--bg-warning: rgba(var(--warning-darker), 0.04);
+  --alert-border--warning: rgba(var(--warning-darker), 0.5);
+  --alert--bg-success: rgba(var(--success-darker), 0.04);
+  --alert-border--success: rgba(var(--success), 0.5);
+  --tab__item--color: var(--gray-1200);
+  --tab__item--hover-color: var(--gray-1200);
+  --tab__item-blue-border--hover-color: var(--gray-900);
+  --tab__item-gray-border--hover-color: var(--gray-900);
+  --tab--darkest-color: var(--gray-1500);
+  --tab--primary-color: var(--primary);
+  --tab__icon--color: var(--gray-1200);
+  --tab__icon--hover-color: var(--gray-1200);
+  --tab-default-border--color: var(--gray-900);
+  --tab-active-border--color: var(--primary);
+  --tab__count-border: var(--gray-900);
+  --tab__count--hover-border: var(--gray-900);
+  /* datepicker */
+  --datepicker__prev-next-btn--border-color: var(--gray-700);
+  --datepicker__prev-next-btn--color: var(--gray-1200);
+  --datepicker__separator--color: var(--gray-600);
+  --datepicker__day-btn--color: var(--gray-1400);
+  --datepicker__disabled-day--color: var(--gray-800);
+  --datepicker__today-btn--bg-color: var(--gray-200);
+  /* pagination */
+  --pagination--disabled-color: var(--gray-900);
+  --pagination__item--color: var(--gray-1400);
+  --pagination__item--active-color: var(--gray-1400);
+  --pagination-border--color: var(--gray-600);
+  /* tooltip */
+  --tooltip--color: var(--gray-1500);
+  --tooltip--bg-color: var(--base-color);
+  --tooltip--light-arrow-color: rgba(var(--gray-1200), 0.1);
+  --tooltip--dark-arrow-color: rgba(var(--gray-1200), 0.1);
+  --tooltip--box-shadow-color: 23, 43, 77;
+  --tooltip--box-shadow: 0 2px 20px 0 rgba(var(--tooltip--box-shadow-color), 0.1), 0 20px 50px 0 rgba(var(--tooltip--box-shadow-color), 0.1);
+  /* card */
+  --card--title-color: var(--gray-1500);
+  --card-border--color: var(--gray-600);
+  --card--box-shadow: 0px 4px 10px 0px rgba(10, 36, 99, 0.06);
+}
